@@ -1,0 +1,65 @@
+:root {
+    font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.object {
+    background-color: aqua;
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    transform: translate(calc(50vw - 50%), calc(40vh - 50%));
+    transition: all 1s;
+}
+
+.canvas {
+    height: 80vh;
+    background-color: #999;
+}
+
+.is-recording {
+    background-color: red;
+}
+
+.control-panel {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.control-buttons-container {
+    /*margin: 0 auto;*/
+    text-align: center;
+}
+
+.keyframes {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.keyframes-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: orangered;
+    flex-grow: 1;
+    overflow-x: auto;
+    /*padding: 0 0.5em;*/
+}
+
+.keyframe {
+    flex-shrink: 0;
+    width: 2%;
+    background-color: #aaa;
+}
+
+.keyframe + .keyframe {
+    margin-left: 2em;
+}
